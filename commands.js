@@ -27,8 +27,11 @@ function evaluateCmd(userInput) {
     break;
   case "tail":
     commandLibrary.tail(userInputArray.slice(1));
-    break
-}
+    break;
+  case "default":
+    commandLibrary.errorHandler(userInput);
+    break;
+  }
 }
 
 //where we will store the logic of our commands
