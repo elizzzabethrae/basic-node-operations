@@ -1,0 +1,19 @@
+1. Run and explain sort, wc, and uniq commands on commands.js file
+
+Sort: running `sort commands.js` returns each line in the file commands.js sorted alphabetically. It returns a lot of }'s at the end :)
+
+Wc: running `wc commands.js` returns 41     113    1026 commands.js
+It is showing the newline, word, and byte counts for the file.
+
+Uniq: running `uniq commands.js` returns each unique line in the file. This returns all of the lines of code I inputted, because those are unique, but only returns one }, break;, etc. 
+
+2. Running `wc commands.js | uniq` returns: 41     113    1026 commands.js
+This is showing that for the unique lines in the file commands.js, here are the number of lines, word, and byte count.
+
+6.
+
+var reverseString = (inputString) => {
+  var newArray = inputString.split('');
+  return newArray.reverse().join('');
+};
+
